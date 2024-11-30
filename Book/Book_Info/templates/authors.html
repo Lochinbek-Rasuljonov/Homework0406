@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mualliflar Ro'yxati</title>
+</head>
+<body>
+    <h1>Mualliflar Ro'yxati</h1>
+    {% for author in authors %}
+    <ul>
+        <li><strong>Muallif Ismi:</strong> {{ author.first_name }} {{ author.last_name }}</li>
+        <li><strong>Tug'ilgan sana:</strong> {{ author.date_of_birth }}</li>
+        <li><strong>Muallif haqida(qisqacha):</strong> {{ author.biography }}</li>
+    </ul>
+    {% endfor %}
+</body>
+</html>

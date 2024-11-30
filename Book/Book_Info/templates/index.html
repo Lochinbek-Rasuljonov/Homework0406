@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kitoblar Ro'yxati</title>
+</head>
+<body>
+    <h1>Kitoblar Ro'yxati</h1>
+    {% for book in books %}
+    <ul>
+        <li><strong>Kitob nomi:</strong> {{ book.title }}</li>
+        <li><strong>Muallif:</strong> {{ book.author.first_name }} {{ book.author.last_name }}</li>
+        <li><strong>Janr:</strong> {{ book.genre }}</li>
+        <li><strong>Kitob haqida:</strong> {{ book.summary }}</li>
+        <li><strong>Chiqarilgan sana:</strong> {{ book.publication_date }}</li>
+        <li><strong>ISBN:</strong> {{ book.isbn }}</li>
+        <li><img src="{{ book.book_photo.url }}" alt="Kitob rasmi" width="300px" height="370px"/></li>
+    </ul>
+    {% endfor %}
+</body>
+</html>
