@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Kitoblar Ro'yxati</title>
+
+    <style>
+        h2 {
+        text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Kitoblar Ro'yxati</h1>
+    <h2><b><i>Kitoblar Ro'yxati</i></b></h2>
     {% for book in books %}
     <ul>
         <li><strong>Kitob nomi:</strong> {{ book.title }}</li>
