@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>{{ book.title }} Kitobi uchun Sharhlar</title>
+    <title>Sharhlar</title>
+
+    <style>
+        h2 {
+        text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>{{ book.title }} Kitobi uchun Sharhlar</h1>
-
-    <h2>Yozilgan Sharhlar:</h2>
+    <h2><b><i>Kitoblar uchun sharhlar</i></b></h2>
     {% for review in reviews %}
     <ul>
+        <li><strong>Kitob nomi:</strong> <font size="4">"{{ review.book }}"</font></li>
         <li><strong>Sharh yozuvchi:</strong> {{ review.reviewer_name }}</li>
         <li><strong>Baho:</strong> {{ review.rating }}</li>
         <li><strong>Izoh:</strong> {{ review.comment }}</li>
