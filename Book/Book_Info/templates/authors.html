@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>Mualliflar Ro'yxati</title>
+
+    <style>
+        h2 {
+        text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Mualliflar Ro'yxati</h1>
+    <h2><b><i>Mualliflar Ro'yxati</i></b></h2>
     {% for author in authors %}
     <ul>
         <li><strong>Muallif Ismi:</strong> {{ author.first_name }} {{ author.last_name }}</li>
